@@ -59,7 +59,7 @@ img:hover{opacity:0.75}
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background-color:#fff}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{background-color:#fff}
 .dropdown-menu li a{color:#fff}
-.navbar-collapse{float:left; position:relative; width:86%}
+.navbar-collapse{float:left; position:relative; width:90%}
 .search{float:left; position:relative}
 .search_icon i{ display:block; float:right; height:10px; line-height:30px; margin-top:0px; text-align:center; width:30px}
 .search_bar{display:inline; height:45px; padding:10px; position:absolute; right:0; top:52px; width:250px; display:none}
