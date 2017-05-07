@@ -24,17 +24,23 @@
 <header id="header">
   <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a></div>
+      
       <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav custom_nav">
-          <li class="active"><a href="index.html">Trang chủ</a></li>
-          <li><a href="#">Sách bán chạy</a></li>
-          <li><a href="#">Lượt xem cao</a></li>
-          <li><a href="#">Giải thưởng</a></li>
-        </ul>
-        <div class="row" style="padding-top:7px;">
+		<div class="row" style="padding-top:7px;">
+			<div class="col-md-1 navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+			  </div>
+			<div class="col-md-5" style="width:38%">
+				<ul class="nav navbar-nav custom_nav">
+				  <li class="active"><a href="index.html">Trang chủ</a></li>
+				  <li><a href="#">Sách bán chạy</a></li>
+				  <li><a href="#">Lượt xem cao</a></li>
+				  <li><a href="#">Giải thưởng</a></li>
+				</ul>
+			</div>
+        
+        
           <div class="col-md-3">
             <div class="input-group" style="width: 300px;">
               <input type="text" class="form-control" placeholder="Search for...">
@@ -43,11 +49,11 @@
               </span>
             </div>
           </div>
-          <div class="col-md-2" style="color:white;">
+          <div class="col-md-2" style="color:white;width:12%;">
             <h4 style="display:inline; font-weight: bold; padding-right:10px;">My book</h4>
             <i class="fa fa-2x fa-bell" aria-hidden="true" ></i>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-2" style="width:10%">
             <img src="images/users/pbd.jpg" class="img-circle" width="30" height="30" style="float:right;">
             <h4 style="display:inline; font-weight: bold; padding-right:10px;float:right;" id="username">PB Đạt</h4>
           </div>
@@ -663,8 +669,8 @@
                 </div>
               </li>
               <li>
-                  <div class="media-body" style="display: table-row; text-decoration: underline;">
-                        <a href="" style="margin-left: 75px;">View all books</a>
+                  <div class="media-body" style="display: table-row; text-decoration: underline;float:right;">
+                        <a href="" >View all books</a>
                   </div>
               </li>
             </ul>
