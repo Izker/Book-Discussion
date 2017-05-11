@@ -24,7 +24,7 @@
 <header id="header">
   <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
-      
+
       <div id="navbar" class="navbar-collapse collapse">
 		<div class="row" style="padding-top:7px;">
 			<div class="col-md-1 navbar-header">
@@ -39,8 +39,8 @@
 				  <li><a href="#">Giải thưởng</a></li>
 				</ul>
 			</div>
-        
-        
+
+
           <div class="col-md-3">
             <div class="input-group" style="width: 300px;">
               <input type="text" class="form-control" placeholder="Search for...">
@@ -82,38 +82,9 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-2 col-md-2 col-sm-4" >
+      <div class="col-lg-1 col-md-2 col-sm-4" >
         <div class="left_sidebar" style="background-color: #fff;">
-          <div class="single_widget">
-            <h2>Sách muốn đọc</h2>
-            <ul class="post_nav">
-              <li>
-                <figure class="effect-lily"><a href="pages/single_page.html"><img src="images/books/10.jpg" alt=""></a>
-                  <figcaption><a href="pages/single_page.html">Gấu Xù Kể Chuyện - Chiếc Áo Tàng Hình</a></figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="effect-lily"><a href="pages/single_page.html"><img src="images/books/11.jpg" alt=""></a>
-                  <figcaption><a href="pages/single_page.html">Bách Khoa Tri Thức Về Khám Phá Thế Giới Cho Trẻ Em - Xác Ướp Và Kim Tự Tháp (Bìa Cứng)</a></figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="effect-lily"><a href="pages/single_page.html"><img src="images/books/12.jpg" alt=""></a>
-                  <figcaption><a href="pages/single_page.html">Bách Khoa Tri Thức Về Khám Phá Thế Giới Cho Trẻ Em - Các Loài Rắn (Bìa Cứng)</a></figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="effect-lily"><a href="pages/single_page.html"><img src="images/books/13.jpg" alt=""></a>
-                  <figcaption><a href="pages/single_page.html">5 Phút Kể Chuyện - Bí Mật Xứ Băng Tuyết</a></figcaption>
-                </figure>
-              </li>
-              <li>
-                <figure class="effect-lily"><a href="pages/single_page.html"><img src="images/books/14.jpg" alt=""></a>
-                  <figcaption><a href="pages/single_page.html">Moana - Đi Tìm Ngọn Sóng (Ấn Phẩm Điện Ảnh Chính Thức)</a></figcaption>
-                </figure>
-              </li>
-            </ul>
-          </div>
+
         </div>
       </div>
       <div class="col-lg-8 col-md-8 col-sm-8" >
@@ -129,6 +100,14 @@
                     <div class="col-md-12">
                       <span class="nameOfUser" style="color: #0f37a6; font-weight:bold;">Em gái chelsea</span>
                       <span class="content">Hay lắm đó, là bộ manga dành cho lứa tuổi thiếu niên của tác giả Eiichiro Oda, được đăng định kì trên tạp chí Weekly Shōnen Jump.</span>
+                      <div class="dropdown" style="float: right; padding-right: 20px;">
+                          <a data-target="#" href="page.html" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                          <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+
+                              <a href="#" onclick="deleteCmt(event)" >Xóa</a><br>
+                              <a href="#" onclick="editCmt(event)">Sửa</a>
+                          </div>
+                      </div>
                     </div>
                   </div>
                   <div class="row">
@@ -139,6 +118,7 @@
                 </div>
               </div>
           </div>
+
           <!-- // store end -->
           <ul class="featured_nav">
             <li class="wow fadeInDown">
@@ -192,14 +172,22 @@
                         <div class="row">
                           <div class="col-md-12">
                             <span style="color: #0f37a6; font-weight:bold;">Dương Quá</span>
-                            <span>Rồi mọi chuyện sẽ qua</span>
+                            <span>hay lắm đó</span>
+                            <div class="dropdown" style="float: right; padding-right: 20px;">
+                                <a data-target="#" href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+                                    <a href="#" onclick="hideCmt(event)" >Ẩn</a><br>
+                                </div>
+                            </div>
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-md-12" style="color: #9e9696;">
                             <h7>21 giờ</h7>
                           </div>
+
                         </div>
+
                       </div>
                     </div>
                 </div>
@@ -211,8 +199,15 @@
                       <div class="col-md-11">
                         <div class="row">
                           <div class="col-md-12">
+                            <div class="dropdown" style="float: right; padding-right: 20px;">
+                                <a data-target="#" href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+                                    <a href="#" onclick="hideCmt(event)" >Ẩn</a><br>
+                                </div>
+                            </div>
                             <span style="color: #0f37a6; font-weight:bold;">Sầu Muội</span>
                             <span>Hay lắm đó sư muội.<br>Hỏi thế gian tình là gì <3</br></span>
+
                           </div>
                         </div>
                         <div class="row">
@@ -231,8 +226,14 @@
                       <div class="col-md-11">
                         <div class="row">
                           <div class="col-md-12">
+                            <div class="dropdown" style="float: right; padding-right: 20px;">
+                                <a data-target="#" href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+                                    <a href="#" onclick="hideCmt(event)" >Ẩn</a><br>
+                                </div>
+                            </div>
                             <span style="color: #0f37a6; font-weight:bold;">Tạ Kim Luân</span>
-                            <span>DQ bỏ rồi hả cưng</span>
+                            <span>DQ </span>
                           </div>
                         </div>
                         <div class="row">
@@ -251,6 +252,12 @@
                       <div class="col-md-11">
                         <div class="row">
                           <div class="col-md-12">
+                            <div class="dropdown" style="float: right; padding-right: 20px;">
+                                <a data-target="#" href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+                                    <a href="#" onclick="hideCmt(event)" >Ẩn</a><br>
+                                </div>
+                            </div>
                             <span style="color: #0f37a6; font-weight:bold;">Dự đẹp trai</span>
                             <span>I read it, but....</span>
                           </div>
@@ -271,8 +278,14 @@
                       <div class="col-md-11">
                         <div class="row">
                           <div class="col-md-12">
+                            <div class="dropdown" style="float: right; padding-right: 20px;">
+                                <a data-target="#" href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+                                    <a href="#" onclick="hideCmt(event)" >Ẩn</a><br>
+                                </div>
+                            </div>
                             <span style="color: #0f37a6; font-weight:bold;">Hư Trúc</span>
-                            <span>Đời là bể khổ</span>
+                            <span>Sách hay</span>
                           </div>
                         </div>
                         <div class="row">
@@ -291,6 +304,12 @@
                       <div class="col-md-11">
                         <div class="row">
                           <div class="col-md-12">
+                            <div class="dropdown" style="float: right; padding-right: 20px;">
+                                <a data-target="#" href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+                                    <a href="#" onclick="hideCmt(event)" >Ẩn</a><br>
+                                </div>
+                            </div>
                             <span style="color: #0f37a6; font-weight:bold;">Bình Doãn</span>
                             <span>Ahihi đỒ nGốK</span>
                           </div>
@@ -579,90 +598,90 @@
             <h2>Sách đang đọc</h2>
             <ul class="ppost_nav wow fadeInDown">
               <li>
-                <div class="media"><a class="media-left" href="pages/single_page.html">
+                <div class="media"><a class="media-left" href="#">
                   <img src="images/books/01.jpg" alt="" width="70" height="90"></a>
                   <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="pages/single_page.html">Hôm nay tôi thất tình</a>
+                        <a class="catg_title" href="#">Hôm nay tôi thất tình</a>
                   </div>
                   <div class="media-body" style="display: table-row">by Hạ Vũ</div>
                   <div class="media-body" style="display: table-row">&nbsp;</div>
                 </div>
               </li>
               <li>
-                <div class="media"><a class="media-left" href="pages/single_page.html">
+                <div class="media"><a class="media-left" href="#">
                   <img src="images/books/02.jpg" alt="" width="70" height="90"></a>
                   <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="pages/single_page.html">Đắc Nhân Tâm (Tái Bản 2016)</a>
+                        <a class="catg_title" href="#">Đắc Nhân Tâm (Tái Bản 2016)</a>
                   </div>
                   <div class="media-body" style="display: table-row">by Dale Carnegie </div>
                   <div class="media-body" style="display: table-row">&nbsp;</div>
                 </div>
               </li>
               <li>
-                <div class="media"><a class="media-left" href="pages/single_page.html">
+                <div class="media"><a class="media-left" href="#">
                   <img src="images/books/03.jpg" alt="" width="70" height="90"></a>
                   <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="pages/single_page.html">Nhà Giả Kim</a>
+                        <a class="catg_title" href="#">Nhà Giả Kim</a>
                   </div>
                   <div class="media-body" style="display: table-row">by Paulo Coelho</div>
                   <div class="media-body" style="display: table-row">&nbsp;</div>
                 </div>
               </li>
               <li>
-                <div class="media"><a class="media-left" href="pages/single_page.html">
+                <div class="media"><a class="media-left" href="#">
                   <img src="images/books/04.jpg" alt="" width="70" height="90"></a>
                   <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="pages/single_page.html">Chờ Đến Mẫu Giáo Thì Đã Muộn</a>
+                        <a class="catg_title" href="#">Chờ Đến Mẫu Giáo Thì Đã Muộn</a>
                   </div>
                   <div class="media-body" style="display: table-row">by Ibuka Masaru</div>
                   <div class="media-body" style="display: table-row">&nbsp;</div>
                 </div>
               </li>
               <li>
-                <div class="media"><a class="media-left" href="pages/single_page.html">
+                <div class="media"><a class="media-left" href="#">
                   <img src="images/books/05.jpg" alt="" width="70" height="90"></a>
                   <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="pages/single_page.html">Vẽ Em Bằng Màu Nỗi Nhớ (Tái Bản 2017)</a>
+                        <a class="catg_title" href="#">Vẽ Em Bằng Màu Nỗi Nhớ (Tái Bản 2017)</a>
                   </div>
                   <div class="media-body" style="display: table-row">by Tâm Phạm</div>
                   <div class="media-body" style="display: table-row">&nbsp;</div>
                 </div>
               </li>
               <li>
-                <div class="media"><a class="media-left" href="pages/single_page.html">
+                <div class="media"><a class="media-left" href="#">
                   <img src="images/books/06.jpg" alt="" width="70" height="90"></a>
                   <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="pages/single_page.html">Trên Đường Băng</a>
+                        <a class="catg_title" href="#">Trên Đường Băng</a>
                   </div>
                   <div class="media-body" style="display: table-row">by Tony Phạm</div>
                   <div class="media-body" style="display: table-row">&nbsp;</div>
                 </div>
               </li>
               <li>
-                <div class="media"><a class="media-left" href="pages/single_page.html">
+                <div class="media"><a class="media-left" href="#">
                   <img src="images/books/07.jpg" alt=""width="70" height="90"></a>
                   <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="pages/single_page.html">Mẹ, Em Bé & Bố (Bìa Mềm)</a>
+                        <a class="catg_title" href="#">Mẹ, Em Bé & Bố (Bìa Mềm)</a>
                   </div>
                   <div class="media-body" style="display: table-row">by Gào</div>
                   <div class="media-body" style="display: table-row">&nbsp;</div>
                 </div>
               </li>
               <li>
-                <div class="media"><a class="media-left" href="pages/single_page.html">
+                <div class="media"><a class="media-left" href="#">
                   <img src="images/books/08.jpg" alt="" width="70" height="90"></a>
                   <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="pages/single_page.html">Tuổi Trẻ Đáng Giá Bao Nhiêu?</a>
+                        <a class="catg_title" href="#">Tuổi Trẻ Đáng Giá Bao Nhiêu?</a>
                   </div>
                   <div class="media-body" style="display: table-row">by Rosie Nguyễn </div>
                   <div class="media-body" style="display: table-row">&nbsp;</div>
                 </div>
               </li>
               <li>
-                <div class="media"><a class="media-left" href="pages/single_page.html">
+                <div class="media"><a class="media-left" href="#">
                   <img src="images/books/09.jpg" alt="" width="70" height="90"></a>
                   <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="pages/single_page.html">Nhân Tố Enzyme</a>
+                        <a class="catg_title" href="#">Nhân Tố Enzyme</a>
                   </div>
                   <div class="media-body" style="display: table-row">by Hiromi Shinya </div>
                   <div class="media-body" style="display: table-row">&nbsp;</div>
@@ -675,153 +694,72 @@
               </li>
             </ul>
           </div>
-          <!-- <div class="single_widget">
-            <ul class="nav nav-tabs custom-tabs" role="tablist">
-              <li role="presentation" class="active"><a href="#" aria-controls="home" role="tab" data-toggle="tab" aria-expanded="true">Recent Post</a></li>
-              <li role="presentation" class=""><a href="#recentComent" aria-controls="messages" role="tab" data-toggle="tab" aria-expanded="false">Recent Comment</a></li>
+          <div class="single_widget"style="padding-top:30px;">
+            <h2>Sách muốn đọc</h2>
+            <ul class="ppost_nav wow fadeInDown">
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="images/books/10.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Chiếc áo tàng hình</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Hạ Vũ</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="images/books/11.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Xác ướp và kim tự tháp</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Dale Carnegie </div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="images/books/12.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Các loài rắn</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Paulo Coelho</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="images/books/13.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Chờ Đến Mẫu Giáo Thì Đã Muộn</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Ibuka Masaru</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="images/books/14.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Moana</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Tâm Phạm</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                  <div class="media-body" style="display: table-row; text-decoration: underline;float:right;">
+                        <a href="" >View all books</a>
+                  </div>
+              </li>
             </ul>
-            <div class="tab-content">
-              <div role="tabpanel" class="tab-pane fade active in" id="mostPopular">
-                <ul class="ppost_nav wow fadeInDown">
-                  <li>
-                    <div class="media"><a class="media-left" href="pages/single_page.html"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="pages/single_page.html">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="pages/single_page.html"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="pages/single_page.html"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div role="tabpanel" class="tab-pane fade" id="recentComent">
-                <ul class="ppost_nav wow fadeInDown">
-                  <li>
-                    <div class="media"><a class="media-left" href="pages/single_page.html"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="pages/single_page.html">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="pages/single_page.html"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="pages/single_page.html"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="media"><a class="media-left" href="#"><img src="images/70x70.jpg" alt=""></a>
-                      <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="single_widget">
-            <h2>Categories</h2>
-            <ul>
-              <li class="cat-item"><a href="#">Technology</a></li>
-              <li class="cat-item"><a href="#">Games</a></li>
-              <li class="cat-item"><a href="#">Business</a></li>
-              <li class="cat-item"><a href="#">Gallery</a></li>
-              <li class="cat-item"><a href="#">Slider</a></li>
-              <li class="cat-item"><a href="#">Life &amp; Style</a></li>
-              <li class="cat-item"><a href="#">Sports</a></li>
-            </ul>
-          </div> -->
-          <!-- <div class="single_widget">
-            <h2>Category Archive</h2>
-            <select class="catgArchive">
-              <option>Select Category</option>
-              <option>Life styles</option>
-              <option>Sports</option>
-              <option>Technology</option>
-              <option>Treads</option>
-            </select>
-          </div> -->
-          <!-- <div class="single_widget">
-            <h2>Links</h2>
-            <ul>
-              <li><a href="#">Log in</a></li>
-              <li><a href="#">Entries RSS</a></li>
-              <li><a href="#">Comment RSS</a></li>
-              <li><a href="#">Wordpress.org</a></li>
-            </ul>
-          </div> -->
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-4" >
+        <div class="left_sidebar" style="background-color: #fff;">
+
         </div>
       </div>
     </div>
@@ -847,17 +785,17 @@
             <!-- <h2>Popular Post</h2> -->
             <ul class="ppost_nav wow fadeInLeftBig">
               <!-- <li>
-                <div class="media"><a href="pages/single_page.html" class="media-left"><img alt="" src="images/70x70.jpg"></a>
-                  <div class="media-body"><a href="pages/single_page.html" class="catg_title">Aliquam malesuada diam eget turpis varius</a></div>
-                </div>
-              </li>
-              <li>
-                <div class="media"><a href="pages/single_page.html" class="media-left"><img alt="" src="images/70x70.jpg"></a>
+                <div class="media"><a href="#" class="media-left"><img alt="" src="images/70x70.jpg"></a>
                   <div class="media-body"><a href="#" class="catg_title">Aliquam malesuada diam eget turpis varius</a></div>
                 </div>
               </li>
               <li>
-                <div class="media"><a href="pages/single_page.html" class="media-left"><img alt="" src="images/70x70.jpg"></a>
+                <div class="media"><a href="#" class="media-left"><img alt="" src="images/70x70.jpg"></a>
+                  <div class="media-body"><a href="#" class="catg_title">Aliquam malesuada diam eget turpis varius</a></div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a href="#" class="media-left"><img alt="" src="images/70x70.jpg"></a>
                   <div class="media-body"><a href="#" class="catg_title">Aliquam malesuada diam eget turpis varius</a></div>
                 </div>
               </li> -->
