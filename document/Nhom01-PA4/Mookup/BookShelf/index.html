@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Book shelf</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-<link rel="stylesheet" type="text/css" href="assets/css/slick.css">
-<link rel="stylesheet" type="text/css" href="assets/css/theme.css">
-<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<!--[if lt IE 9]>
-<script src="assets/js/html5shiv.min.js"></script>
-<script src="assets/js/respond.min.js"></script>
-<![endif]-->
+  <title>Book shelf</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.min.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
 <div id="preloader">
@@ -25,48 +25,48 @@
   <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
 
-      <div id="navbar" class="navbar-collapse collapse">
-		<div class="row" style="padding-top:7px;">
-			<div class="col-md-1 navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
-			  </div>
-			<div class="col-md-5" style="width:38%">
-				<ul class="nav navbar-nav custom_nav">
-				  <li class="active"><a href="index.html">Trang chủ</a></li>
-				  <li><a href="#">Sách bán chạy</a></li>
-				  <li><a href="#">Lượt xem cao</a></li>
-				  <li><a href="#">Giải thưởng</a></li>
-				</ul>
-			</div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <div class="row">
+     
+          <div class="col-md-1 navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+          </div>
+          <div class="col-md-5">
+            <ul class="nav navbar-nav custom_nav">
+              <li class="active"><a href="index.html">Trang chủ</a></li>
+              <li><a href="#">Sách bán chạy</a></li>
+              <li><a href="#">Lượt xem cao</a></li>
+              <li><a href="#">Giải thưởng</a></li>
+            </ul>
+          </div>   
 
-
-          <div class="col-md-3">
+          <div class="col-md-3" style="padding-top:8px">
             <div class="input-group" style="width: 300px;">
-              <input type="text" class="form-control" placeholder="Search for...">
+              <input type="text" class="form-control" placeholder="Tìm sách, tác giả...">
               <span class="input-group-btn">
                 <button class="btn btn-default" type="button">Tìm</button>
               </span>
             </div>
           </div>
-          <div class="col-md-2" style="color:white;width:12%;">
-            <h4 style="display:inline; font-weight: bold; padding-right:10px;">My book</h4>
-            <i class="fa fa-2x fa-bell" aria-hidden="true" ></i>
-          </div>
-          <div class="col-md-2" style="width:10%">
-            <img src="images/users/pbd.jpg" class="img-circle" width="30" height="30" style="float:right;">
-            <h4 style="display:inline; font-weight: bold; padding-right:10px;float:right;" id="username">PB Đạt</h4>
-          </div>
-          <div class="search">
-            <a class="search_icon" href="#">
-              <i class="fa fa-2x fa-sort-desc" aria-hidden="true"></i>
+          
+          <div class="col-md-3" style="color:white; padding-top:8px">
+            <h4 style="display:inline; font-weight: bold;">My books</h4>
+            <i class="fa fa-out fa-22x fa-bell" aria-hidden="true" ></i>
+            
+            <h4 class= "fa fa-out" style="font-weight: bold;padding-right: 0.3em";" id="username">PB Đạt</h4>
+            <img src="images/users/pbd.jpg" class="img-circle"  width="30" height="30">
+            <a class="fa fa-in fa-2x fa-sort-desc" href="#">
+            <i aria-hidden="true"></i>
             </a>
             <form action="#">
               <input class="search_bar" type="text" placeholder="Thông tin user">
             </form>
-          </div>
-        </div>
+            
+            
+          </div>         
       </div>
+    </div>
     </div>
   </nav>
 </header>
@@ -765,72 +765,9 @@
     </div>
   </div>
 </section>
-<footer id="footer">
-  <div class="footer_top">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm3">
-          <div class="footer_widget wow fadeInLeftBig">
-            <h2>Giúp đỡ</h2>
-            <ul class="labels_nav">
-              <li><a href="#">Mail: hotro@gmail.com</a></li>
-              <li><a href="#">Điện thoại: 0959590000</a></li>
-              <li><a href="#">Fax: 01548944213</a></li>
 
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm3">
-          <div class="footer_widget">
-            <!-- <h2>Popular Post</h2> -->
-            <ul class="ppost_nav wow fadeInLeftBig">
-              <!-- <li>
-                <div class="media"><a href="#" class="media-left"><img alt="" src="images/70x70.jpg"></a>
-                  <div class="media-body"><a href="#" class="catg_title">Aliquam malesuada diam eget turpis varius</a></div>
-                </div>
-              </li>
-              <li>
-                <div class="media"><a href="#" class="media-left"><img alt="" src="images/70x70.jpg"></a>
-                  <div class="media-body"><a href="#" class="catg_title">Aliquam malesuada diam eget turpis varius</a></div>
-                </div>
-              </li>
-              <li>
-                <div class="media"><a href="#" class="media-left"><img alt="" src="images/70x70.jpg"></a>
-                  <div class="media-body"><a href="#" class="catg_title">Aliquam malesuada diam eget turpis varius</a></div>
-                </div>
-              </li> -->
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm3">
-          <div class="footer_widget wow fadeInRightBig">
-            <!-- <h2>Flickr Images</h2> -->
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-3 col-sm3">
-          <div class="footer_widget wow fadeInRightBig">
-            <h2>Nhận tin</h2>
-            <form action="#" class="subscribe_form">
-              <p id="subscribe-text">Nhập mail để nhận thông tin về sách mới mỗi ngày</p>
-              <p id="subscribe-email">
-                <input type="text" placeholder="Địa chỉ email" name="email">
-              </p>
-              <p id="subscribe-submit">
-                <input type="submit" value="Gửi">
-              </p>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer_bottom">
-    <div class="container">
-      <p class="copyright">Copyright &copy; 2045 <a href="index.html">Book Shelf</a></p>
-      <p class="developer">Developed By TND</p>
-    </div>
-  </div>
-</footer>
+
+ 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
