@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book shelf</title>
+  <script src="../assets/js/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/star-rating.min.css">
+
+
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="stylesheet" href="../assets/css/flexslider.css" type="text/css" media="screen" />
+
+</head>
+<body>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+<a class="scrollToTop" href="#" style="border-radius: 30px;"><i class="fa fa-angle-up"></i></a>
+<header id="header">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+
+    <div id="navbar" class="navbar-collapse collapse">
+      <div class="row">
+
+          <div class="col-md-1 navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <a class="navbar-brand" href="index.html"><img src="../images/logo.png" alt=""></a>
+          </div>
+          <div class="col-md-5">
+            <ul class="nav navbar-nav custom_nav">
+              <li class="active"><a href="../index.html">Trang chủ</a></li>
+              <li><a href="#">Sách bán chạy</a></li>
+              <li><a href="#">Lượt xem cao</a></li>
+              <li><a href="#">Giải thưởng</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3" style="padding-top:8px">
+            <div class="input-group" style="width: 300px;">
+              <input type="text" class="form-control" placeholder="Tìm sách, tác giả...">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Tìm</button>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="color:white; padding-top:8px">
+            <h4 style="display:inline; font-weight: bold;">My books</h4>
+            <i class="fa fa-out fa-22x fa-bell" aria-hidden="true" ></i>
+
+            <h4 class= "fa fa-out" style="font-weight: bold;padding-right: 0.3em";" id="username">PB Đạt</h4>
+            <img src="../images/users/pbd.jpg" class="img-circle"  width="30" height="30">
+            <a class="fa fa-in fa-2x fa-sort-desc" href="#">
+            <i aria-hidden="true"></i>
+            </a>
+            <form action="#">
+              <input class="search_bar" type="text" placeholder="Thông tin user">
+            </form>
+
+
+          </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+</header>
+<section id="content">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1 col-md-2 col-sm-4" >
+        <div class="left_sidebar" style="background-color: #fff;">
+
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-8 col-sm-8" >
+        <div class="middle_content" style="background-color: #fff;padding-top:10px;border-radius: 10px;min-height:1835px;">
+			<div><h3>Kết quả tìm kiếm</h3></div>
+			<!-- ITEM 1 -->
+			<div class="products-page">
+				<div class="new-product" style="min-height: 150px;float:none;">
+				<div class="col-md-3 zoom-grid">
+					<div class="flexslider" style="background:none; border:none;padding-top:10px;">
+						<img src="../images/books/16.jpg" data-imagezoom="true" class="img-responsive" alt="" style="max-width: 70%;"/>
+					</div>
+				</div>
+				<div class="col-md-9 dress-info">
+					<div class="dress-name">
+			  <h4>Những kẻ săn máu</h4>
+						<div class="clearfix"></div>
+			  <h6>by Le Pichon</h6>
+					</div>
+			<input id="input-5-xs"class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="xs">
+			<div class="dress-name">
+			  <p>Với tất cả những ai đã quan tâm và từng nghiên cứu lịch sử....</p>
+					</div>
+				<div class="span span1">
+					<p class="left">Ngôn ngữ:</p>
+					<p class="right">Tiếng việt</p>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				</div>
+				<div class="span span1">
+						<p class="right"><span class="selection-box">
+				<select class="form-control" name="domains" style="height:30px;font-size: 15px;font-weight: bold;">
+					<option>Want to read</option>
+					<option></option>
+								   </select></span>
+			   </p>
+						<div class="clearfix"></div>
+					</div>
+
+				</div>
+					<div class="clearfix"></div>
+					<div class="reviews-tabs">
+				</div>
+			</div>
+			
+			<!-- ITEM 1 -->
+			<div class="products-page">
+				<div class="new-product" style="min-height: 150px;float:none;">
+				<div class="col-md-3 zoom-grid">
+					<div class="flexslider" style="background:none; border:none;padding-top:10px;">
+						<img src="../images/books/16.jpg" data-imagezoom="true" class="img-responsive" alt="" style="max-width: 70%;"/>
+					</div>
+				</div>
+				<div class="col-md-9 dress-info">
+					<div class="dress-name">
+			  <h4>Những kẻ săn máu</h4>
+						<div class="clearfix"></div>
+			  <h6>by Le Pichon</h6>
+					</div>
+			<input id="input-5-xs"class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="xs">
+			<div class="dress-name">
+			  <p>Với tất cả những ai đã quan tâm và từng nghiên cứu lịch sử....</p>
+					</div>
+				<div class="span span1">
+					<p class="left">Ngôn ngữ:</p>
+					<p class="right">Tiếng việt</p>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				</div>
+				<div class="span span1">
+						<p class="right"><span class="selection-box">
+				<select class="form-control" name="domains" style="height:30px;font-size: 15px;font-weight: bold;">
+					<option>Want to read</option>
+					<option></option>
+								   </select></span>
+			   </p>
+						<div class="clearfix"></div>
+					</div>
+
+				</div>
+					<div class="clearfix"></div>
+					<div class="reviews-tabs">
+				</div>
+			</div>
+			<!-- ITEM 1 -->
+			<div class="products-page">
+				<div class="new-product" style="min-height: 150px;float:none;">
+				<div class="col-md-3 zoom-grid">
+					<div class="flexslider" style="background:none; border:none;padding-top:10px;">
+						<img src="../images/books/16.jpg" data-imagezoom="true" class="img-responsive" alt="" style="max-width: 70%;"/>
+					</div>
+				</div>
+				<div class="col-md-9 dress-info">
+					<div class="dress-name">
+			  <h4>Những kẻ săn máu</h4>
+						<div class="clearfix"></div>
+			  <h6>by Le Pichon</h6>
+					</div>
+			<input id="input-5-xs"class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="xs">
+			<div class="dress-name">
+			  <p>Với tất cả những ai đã quan tâm và từng nghiên cứu lịch sử....</p>
+					</div>
+				<div class="span span1">
+					<p class="left">Ngôn ngữ:</p>
+					<p class="right">Tiếng việt</p>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				</div>
+				<div class="span span1">
+						<p class="right"><span class="selection-box">
+				<select class="form-control" name="domains" style="height:30px;font-size: 15px;font-weight: bold;">
+					<option>Want to read</option>
+					<option></option>
+								   </select></span>
+			   </p>
+						<div class="clearfix"></div>
+					</div>
+
+				</div>
+					<div class="clearfix"></div>
+					<div class="reviews-tabs">
+				</div>
+			</div>
+			<!-- ITEM 1 -->
+			<div class="products-page">
+				<div class="new-product" style="min-height: 150px;float:none;">
+				<div class="col-md-3 zoom-grid">
+					<div class="flexslider" style="background:none; border:none;padding-top:10px;">
+						<img src="../images/books/16.jpg" data-imagezoom="true" class="img-responsive" alt="" style="max-width: 70%;"/>
+					</div>
+				</div>
+				<div class="col-md-9 dress-info">
+					<div class="dress-name">
+			  <h4>Những kẻ săn máu</h4>
+						<div class="clearfix"></div>
+			  <h6>by Le Pichon</h6>
+					</div>
+			<input id="input-5-xs"class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="xs">
+			<div class="dress-name">
+			  <p>Với tất cả những ai đã quan tâm và từng nghiên cứu lịch sử....</p>
+					</div>
+				<div class="span span1">
+					<p class="left">Ngôn ngữ:</p>
+					<p class="right">Tiếng việt</p>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				</div>
+				<div class="span span1">
+						<p class="right"><span class="selection-box">
+				<select class="form-control" name="domains" style="height:30px;font-size: 15px;font-weight: bold;">
+					<option>Want to read</option>
+					<option></option>
+								   </select></span>
+			   </p>
+						<div class="clearfix"></div>
+					</div>
+
+				</div>
+					<div class="clearfix"></div>
+					<div class="reviews-tabs">
+				</div>
+			</div>
+			<!-- ITEM 1 -->
+			<div class="products-page">
+			
+				<div class="new-product" style="min-height: 150px;float:none;">
+				<div class="col-md-3 zoom-grid">
+					<div class="flexslider" style="background:none; border:none;padding-top:10px;">
+						<img src="../images/books/16.jpg" data-imagezoom="true" class="img-responsive" alt="" style="max-width: 70%;"/>
+					</div>
+				</div>
+				<div class="col-md-9 dress-info">
+					<div class="dress-name">
+			  <h4>Những kẻ săn máu</h4>
+						<div class="clearfix"></div>
+			  <h6>by Le Pichon</h6>
+					</div>
+			<input id="input-5-xs"class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="xs">
+			<div class="dress-name">
+			  <p>Với tất cả những ai đã quan tâm và từng nghiên cứu lịch sử....</p>
+					</div>
+				<div class="span span1">
+					<p class="left">Ngôn ngữ:</p>
+					<p class="right">Tiếng việt</p>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				</div>
+				<div class="span span1">
+						<p class="right"><span class="selection-box">
+				<select class="form-control" name="domains" style="height:30px;font-size: 15px;font-weight: bold;">
+					<option>Want to read</option>
+					<option></option>
+								   </select></span>
+			   </p>
+						<div class="clearfix"></div>
+					</div>
+
+				</div>
+					<div class="clearfix"></div>
+					<div class="reviews-tabs">
+				</div>
+			</div>
+			<!-- ITEM 1 -->
+			<div class="products-page">
+			
+				<div class="new-product" style="min-height: 150px;float:none;">
+				<div class="col-md-3 zoom-grid">
+					<div class="flexslider" style="background:none; border:none;padding-top:10px;">
+						<img src="../images/books/16.jpg" data-imagezoom="true" class="img-responsive" alt="" style="max-width: 70%;"/>
+					</div>
+				</div>
+				<div class="col-md-9 dress-info">
+					<div class="dress-name">
+			  <h4>Những kẻ săn máu</h4>
+						<div class="clearfix"></div>
+			  <h6>by Le Pichon</h6>
+					</div>
+			<input id="input-5-xs"class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="xs">
+			<div class="dress-name">
+			  <p>Với tất cả những ai đã quan tâm và từng nghiên cứu lịch sử....</p>
+					</div>
+				<div class="span span1">
+					<p class="left">Ngôn ngữ:</p>
+					<p class="right">Tiếng việt</p>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				</div>
+				<div class="span span1">
+						<p class="right"><span class="selection-box">
+				<select class="form-control" name="domains" style="height:30px;font-size: 15px;font-weight: bold;">
+					<option>Want to read</option>
+					<option></option>
+								   </select></span>
+			   </p>
+						<div class="clearfix"></div>
+					</div>
+
+				</div>
+					<div class="clearfix"></div>
+					<div class="reviews-tabs">
+				</div>
+			</div>
+		
+			<div class="pagination" style="float:right;">
+			  <a href="#">&laquo;</a>
+			  <a href="#">1</a>
+			  <a href="#">2</a>
+			  <a href="#">3</a>
+			  <a href="#">4</a>
+			  <a href="#">5</a>
+			  <a href="#">6</a>
+			  <a href="#">&raquo;</a>
+			</div>																																
+		<div class="clearfix"></div>
+		</div>
+
+
+
+
+
+
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-12" >
+        <div class="right_sidebar" style="background-color: #fff;">
+          <div class="single_widget">
+            <h2>Sách đang đọc</h2>
+            <ul class="ppost_nav wow fadeInDown">
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/01.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Hôm nay tôi thất tình</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Hạ Vũ</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/02.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Đắc Nhân Tâm (Tái Bản 2016)</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Dale Carnegie </div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/03.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Nhà Giả Kim</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Paulo Coelho</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/04.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Chờ Đến Mẫu Giáo Thì Đã Muộn</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Ibuka Masaru</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/05.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Vẽ Em Bằng Màu Nỗi Nhớ (Tái Bản 2017)</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Tâm Phạm</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/06.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Trên Đường Băng</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Tony Phạm</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/07.jpg" alt=""width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Mẹ, Em Bé & Bố (Bìa Mềm)</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Gào</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/08.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Tuổi Trẻ Đáng Giá Bao Nhiêu?</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Rosie Nguyễn </div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/09.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Nhân Tố Enzyme</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Hiromi Shinya </div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                  <div class="media-body" style="display: table-row; text-decoration: underline;float:right;">
+                        <a href="" >View all books</a>
+                  </div>
+              </li>
+            </ul>
+          </div>
+          <div class="single_widget"style="padding-top:30px;">
+            <h2>Sách muốn đọc</h2>
+            <ul class="ppost_nav wow fadeInDown">
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/10.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Chiếc áo tàng hình</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Hạ Vũ</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/11.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Xác ướp và kim tự tháp</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Dale Carnegie </div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/12.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Các loài rắn</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Paulo Coelho</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/13.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Chờ Đến Mẫu Giáo Thì Đã Muộn</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Ibuka Masaru</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="#">
+                  <img src="../images/books/14.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="#">Moana</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Tâm Phạm</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                  <div class="media-body" style="display: table-row; text-decoration: underline;float:right;">
+                        <a href="" >View all books</a>
+                  </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-4" >
+        <div class="left_sidebar" style="background-color: #fff;">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="../assets/js/wow.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/slick.min.js"></script>
+<script src="../assets/js/custom.js"></script>
+<script src="../assets/js/comment.js"></script>
+<!-- <script type="text/javascript" src="../assets/js/bootstrap-3.1.1.min.js"></script> -->
+<script type="text/javascript" src="../assets/js/star-rating.min.js"></script>
+</body>
+</html>
