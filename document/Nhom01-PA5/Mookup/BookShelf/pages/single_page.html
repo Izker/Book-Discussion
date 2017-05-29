@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="../assets/css/star-rating.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/searchsuggestion.css">
 
 
   <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -46,7 +47,7 @@
 
           <div class="col-md-3" style="padding-top:8px">
             <div class="input-group" style="width: 300px;">
-              <input type="text" class="form-control" placeholder="Tìm sách, tác giả...">
+              <input type="text" name="currency" id="autocomplete" class="form-control" placeholder="Tìm sách, tác giả...">
               <span class="input-group-btn">
                 <button class="btn btn-default" type="button">Tìm</button>
               </span>
@@ -90,8 +91,8 @@
 
         </div>
       </div>
-      <div class="col-lg-8 col-md-8 col-sm-8" >
-        <div class="middle_content" style="background-color: #fff;padding-top:10px;border-radius: 10px;min-height:1835px;">
+      <div class="col-lg-7 col-md-8 col-sm-8" >
+        <div class="middle_content" style="background-color: #fff;padding-top:10px;border-radius: 10px;min-height:1125px;">
 
 
           <div class="products-page">
@@ -148,14 +149,14 @@
           					</div>
           					<div class="span span1">
           						<p class="left">Buy Online:</p>
-                      <p class="left eclipseShape" style="margin-right:30px;">&nbsp;&nbsp;Buy Online:</p>
+                      <p class="left eclipseShape" style="margin-right:30px; text-align: center !important; width: 145px !important;">&nbsp;&nbsp;Buy Online:</p>
           						<p class="right"><span class="selection-box">
                         <select class="form-control" name="domains" style="height:25px;font-size: 11px;font-weight: bold;">
                             <option>Another stores</option>
-                            <option>store1</option>
-                            <option>store2</option>
-                            <option>store3</option>
-    										    <option>store4</option>
+                            <option>Tiki</option>
+                            <option>Lazada</option>
+                            <option>Fahasha</option>
+    										    <option>Nhã Nam</option>
     									   </select>
                        </span>
                        </p>
@@ -165,7 +166,8 @@
           						<p class="right"><span class="selection-box">
                         <select class="form-control" name="domains" style="height:30px;font-size: 15px;font-weight: bold;">
                             <option>Want to read</option>
-                            <option></option>
+                            <option>Current Reading</option>
+                            <option>Read</option>
     									   </select></span>
                        </p>
           						<div class="clearfix"></div>
@@ -365,9 +367,9 @@
                             <div class="col-md-11">
                               <div class="form-group has-feedback">
                                   <label class="control-label sr-only">DatePicker</label>
-                                  <textarea id="cmt01" name="comment" class="form-control" rows="3" onkeypress="comment(event)"></textarea>
-                                  <i class="fa fa-camera form-control-feedback" style="padding-top:50px;font-size: 1.5em;"></i>
-                                  <i class="fa  fa-smile-o form-control-feedback" style="padding-top:50px;padding-right:50px;font-size: 1.5em;"></i>
+                                  <textarea placeholder="Write a comment..." style="height: 70px !important" id="cmt01" name="comment" class="form-control" rows="3" onkeypress="comment(event)"></textarea>
+                                  <i class="fa fa-camera form-control-feedback" style="padding-top:80px;font-size: 1.5em;"></i>
+                                  <i class="fa  fa-smile-o form-control-feedback" style="padding-top:80px;padding-right:55px;font-size: 1.5em;"></i>
                               </div>
 
                             </div>
@@ -569,32 +571,18 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
       </div>
       <div class="col-lg-2 col-md-2 col-sm-12" >
-        <div class="right_sidebar" style="background-color: #fff;">
+        <div class="right_sidebar" style="background-color: #fff; border-radius: 10px !important; width: 370px !important">
           <div class="single_widget">
-            <h2>Sách đang đọc</h2>
+            <h2 style="border-top-left-radius: 10px !important; border-top-right-radius: 10px !important; width: 370px !important;">Sách đang đọc</h2>
             <ul class="ppost_nav wow fadeInDown">
               <li>
                 <div class="media"><a class="media-left" href="#">
                   <img src="../images/books/01.jpg" alt="" width="70" height="90"></a>
                   <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="#">Hôm nay tôi thất tình</a>
+                        <a class="catg_title" href="../pages/single_page.html">Hôm nay tôi thất tình</a>
                   </div>
                   <div class="media-body" style="display: table-row">by Hạ Vũ</div>
                   <div class="media-body" style="display: table-row">&nbsp;</div>
@@ -622,61 +610,11 @@
               </li>
               <li>
                 <div class="media"><a class="media-left" href="#">
-                  <img src="../images/books/04.jpg" alt="" width="70" height="90"></a>
-                  <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="#">Chờ Đến Mẫu Giáo Thì Đã Muộn</a>
-                  </div>
-                  <div class="media-body" style="display: table-row">by Ibuka Masaru</div>
-                  <div class="media-body" style="display: table-row">&nbsp;</div>
-                </div>
-              </li>
-              <li>
-                <div class="media"><a class="media-left" href="#">
-                  <img src="../images/books/05.jpg" alt="" width="70" height="90"></a>
-                  <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="#">Vẽ Em Bằng Màu Nỗi Nhớ (Tái Bản 2017)</a>
-                  </div>
-                  <div class="media-body" style="display: table-row">by Tâm Phạm</div>
-                  <div class="media-body" style="display: table-row">&nbsp;</div>
-                </div>
-              </li>
-              <li>
-                <div class="media"><a class="media-left" href="#">
-                  <img src="../images/books/06.jpg" alt="" width="70" height="90"></a>
-                  <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="#">Trên Đường Băng</a>
-                  </div>
-                  <div class="media-body" style="display: table-row">by Tony Phạm</div>
-                  <div class="media-body" style="display: table-row">&nbsp;</div>
-                </div>
-              </li>
-              <li>
-                <div class="media"><a class="media-left" href="#">
-                  <img src="../images/books/07.jpg" alt=""width="70" height="90"></a>
-                  <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="#">Mẹ, Em Bé & Bố (Bìa Mềm)</a>
-                  </div>
-                  <div class="media-body" style="display: table-row">by Gào</div>
-                  <div class="media-body" style="display: table-row">&nbsp;</div>
-                </div>
-              </li>
-              <li>
-                <div class="media"><a class="media-left" href="#">
                   <img src="../images/books/08.jpg" alt="" width="70" height="90"></a>
                   <div class="media-body" style="display: table-row; font-weight:bold;">
                         <a class="catg_title" href="#">Tuổi Trẻ Đáng Giá Bao Nhiêu?</a>
                   </div>
                   <div class="media-body" style="display: table-row">by Rosie Nguyễn </div>
-                  <div class="media-body" style="display: table-row">&nbsp;</div>
-                </div>
-              </li>
-              <li>
-                <div class="media"><a class="media-left" href="#">
-                  <img src="../images/books/09.jpg" alt="" width="70" height="90"></a>
-                  <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="#">Nhân Tố Enzyme</a>
-                  </div>
-                  <div class="media-body" style="display: table-row">by Hiromi Shinya </div>
                   <div class="media-body" style="display: table-row">&nbsp;</div>
                 </div>
               </li>
@@ -687,8 +625,8 @@
               </li>
             </ul>
           </div>
-          <div class="single_widget"style="padding-top:30px;">
-            <h2>Sách muốn đọc</h2>
+          <div class="single_widget" style="padding-top: 33px !important;">
+            <h2 style="border-top-left-radius: 10px !important; border-top-right-radius: 10px !important; width: 370px !important;">Sách muốn đọc</h2>
             <ul class="ppost_nav wow fadeInDown">
               <li>
                 <div class="media"><a class="media-left" href="#">
@@ -707,16 +645,6 @@
                         <a class="catg_title" href="#">Xác ướp và kim tự tháp</a>
                   </div>
                   <div class="media-body" style="display: table-row">by Dale Carnegie </div>
-                  <div class="media-body" style="display: table-row">&nbsp;</div>
-                </div>
-              </li>
-              <li>
-                <div class="media"><a class="media-left" href="#">
-                  <img src="../images/books/12.jpg" alt="" width="70" height="90"></a>
-                  <div class="media-body" style="display: table-row; font-weight:bold;">
-                        <a class="catg_title" href="#">Các loài rắn</a>
-                  </div>
-                  <div class="media-body" style="display: table-row">by Paulo Coelho</div>
                   <div class="media-body" style="display: table-row">&nbsp;</div>
                 </div>
               </li>
@@ -765,5 +693,7 @@
 <script src="../assets/js/comment.js"></script>
 <!-- <script type="text/javascript" src="../assets/js/bootstrap-3.1.1.min.js"></script> -->
 <script type="text/javascript" src="../assets/js/star-rating.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.autocomplete.min.js"></script>
+<script type="text/javascript" src="../assets/js/currency-autocomplete.js"></script>
 </body>
 </html>
