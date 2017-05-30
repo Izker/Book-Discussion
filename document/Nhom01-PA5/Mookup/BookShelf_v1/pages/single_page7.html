@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book shelf</title>
+  <script src="../assets/js/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/theme.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/star-rating.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/searchsuggestion.css">
+
+
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link rel="stylesheet" href="../assets/css/flexslider.css" type="text/css" media="screen" />
+
+</head>
+<body>
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+<a class="scrollToTop" href="#" style="border-radius: 30px;"><i class="fa fa-angle-up"></i></a>
+<header id="header">
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+
+    <div id="navbar" class="navbar-collapse collapse">
+      <div class="row">
+
+          <div class="col-md-1 navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt=""></a>
+          </div>
+          <div class="col-md-5">
+            <ul class="nav navbar-nav custom_nav">
+              <li class="active"><a href="../index.html">Trang chủ</a></li>
+              <li><a href="sachbanchay.html">Sách bán chạy</a></li>
+              <li><a href="viewcao.html">Lượt xem cao</a></li>
+              <li><a href="giaituong.html">Giải thưởng</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3" style="padding-top:8px">
+            <div class="input-group" style="width: 300px;">
+              <input type="text" name="currency" id="autocomplete" class="form-control" placeholder="Tìm sách, tác giả...">
+              <span class="input-group-btn">
+                <button id="search_btn" class="btn btn-default" type="button">Tìm</button>
+              </span>
+            </div>
+          </div>
+
+          <div class="col-md-3" style="color:white; padding-top:8px">
+            <h4 style="display:inline; font-weight: bold;">My books</h4>
+            <i class="fa fa-out fa-22x fa-bell" aria-hidden="true" ></i>
+
+            <h4 class= "fa fa-out" style="font-weight: bold;padding-right: 0.3em";" id="username">PB Đạt</h4>
+            <img src="../images/users/pbd.jpg" class="img-circle"  width="30" height="30">
+            <a class="fa fa-in fa-2x fa-sort-desc" href="#">
+            <i aria-hidden="true"></i>
+            </a>
+            <form action="#">
+              <input class="search_bar" type="text" placeholder="Thông tin user">
+            </form>
+
+
+          </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+</header>
+<section id="content">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1 col-md-2 col-sm-4" >
+        <div class="left_sidebar" style="background-color: #fff;">
+
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-8 col-sm-8" >
+        <div class="middle_content" style="background-color: #fff;padding-top:10px;border-radius: 10px;min-height:1125px;">
+
+
+          <div class="products-page">
+          			<div class="new-product">
+          				<div class="col-md-4 zoom-grid">
+          					<div class="flexslider">
+          						<ul class="slides">
+          							<li data-thumb="../images/books/11.jpg">
+          								<div class="thumb-image"> <img src="../images/books/11.jpg" data-imagezoom="true" class="img-responsive" alt="" /> </div>
+          							</li>
+          							<li data-thumb="../images/books/11.jpg">
+          								<div class="thumb-image"> <img src="../images/books/11.jpg" data-imagezoom="true" class="img-responsive" alt="" /> </div>
+          							</li>
+          							<li data-thumb="../images/books/11.jpg">
+          							<div class="thumb-image"> <img src="../images/books/11.jpg" data-imagezoom="true" class="img-responsive" alt="" /> </div>
+          							</li>
+          						</ul>
+          					</div>
+          				</div>
+          				<div class="col-md-8 dress-info">
+          					<div class="dress-name">
+                      <h2>Xác ướp và kim tự tháp</h2>
+          						<div class="clearfix"></div>
+                      <h4>by Dale Carnegie</h4>
+          					</div>
+                    <input id="input-5-xs" onclick="CriteriaClick()" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="sm">
+                    <div class="dress-name">
+                      <p>Bách Khoa Tri Thức Về Khám Phá Thế Giới Cho Trẻ Em - Xác Ướp Và Kim Tự Tháp (Tái Bản)
+
+Nội dung của bộ sách Bách Khoa Tri Thức Về Khám Phá Thế Giới Cho Trẻ Em đề cập đến rất nhiều những vấn đề mà trẻ muốn biết, từ vũ trụ, trái đất đến giới động vật, thực vật, từ khoa học kỹ thuật đến xã hội cuộc sống. Sách được minh họa bằng những bức tranh sinh động, ngôn ngữ của  đơn giản, dễ hiểu. Mỗi một chủ đề giúp trẻ nhận thức thế giới, tăng cường tri thức, nâng cao khả năng sáng tạo và trí tưởng tượng.
+
+Ngoài ra, sách còn giới thiệu những trang web chứa đựng nhiều thông tin, trò chơi và hoạt động thú vị, cập nhật thêm các tin tức mới nhất về các chủ đề.
+</p>
+          					</div>
+          					<div class="span span1">
+          						<p class="left">NXB:</p>
+          						<p class="right">Chưa cập nhật</p>
+          						<div class="clearfix"></div>
+          					</div>
+          					<div class="span span1">
+          						<p class="left">Kiểu bìa:</p>
+          						<p class="right">Chưa cập nhật</p>
+          						<div class="clearfix"></div>
+          					</div>
+          					<div class="span span1">
+          						<p class="left">Khổ sách:</p>
+          						<p class="right">X</p>
+          						<div class="clearfix"></div>
+          					</div>
+                    <div class="span span1">
+          						<p class="left">Số trang:</p>
+          						<p class="right">320</p>
+          						<div class="clearfix"></div>
+          					</div>
+                    <div class="span span1">
+          						<p class="left">Ngôn ngữ:</p>
+          						<p class="right">Tiếng việt</p>
+          						<div class="clearfix"></div>
+          					</div>
+          					<div class="span span1">
+          						<p class="left">Buy Online:</p>
+                      <p class="left eclipseShape" style="margin-right:30px; text-align: center !important; width: 145px !important;">&nbsp;&nbsp;Buy Online:</p>
+          						<p class="right"><span class="selection-box">
+                        <select class="form-control" name="domains" style="height:25px;font-size: 11px;font-weight: bold;">
+                            <option>Another stores</option>
+                            <option>Tiki</option>
+                            <option>Lazada</option>
+                            <option>Fahasha</option>
+    										    <option>Nhã Nam</option>
+    									   </select>
+                       </span>
+                       </p>
+          						<div class="clearfix"></div>
+          					</div>
+                    <div class="span span1">
+          						<p class="right"><span class="selection-box">
+                        <select class="form-control" name="domains" style="height:30px;font-size: 15px;font-weight: bold;">
+                            <option>Want to read</option>
+                            <option>Current Reading</option>
+                            <option>Read</option>
+    									   </select></span>
+                       </p>
+          						<div class="clearfix"></div>
+          					</div>
+
+          				<script src="../assets/js/imagezoom.js"></script>
+          					<!-- FlexSlider -->
+          					<script defer src="../assets/js/jquery.flexslider.js"></script>
+          					<script>
+          						// Can also be used with $(document).ready()
+          						$(window).load(function() {
+          						  $('.flexslider').flexslider({
+          							animation: "slide",
+          							controlNav: "thumbnails"
+          						  });
+          						});
+          					</script>
+          				</div>
+          				<div class="clearfix"></div>
+          					<div class="reviews-tabs">
+                <!-- Main component for a primary marketing message or call to action -->
+                <ul class="nav nav-tabs responsive hidden-xs hidden-sm" id="myTab">
+                  <li class="test-class active"><a class="deco-none misc-class" href="#how-to">Reviews (5)</a></li>
+                </ul>
+
+                <div class="tab-content responsive hidden-xs hidden-sm">
+                  <div class="tab-pane active" id="how-to">
+
+                    <div id="comments-cmt01">
+                      <div style="padding-left:20px;padding-top:10px; display:none;" class="row">
+                          <div class="row">
+                            <div class="col-md-1">
+                                <img src="../images/users/dq.jpg"  width="50" height="50" style="float:left;">
+                            </div>
+                            <div class="col-md-11">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <span style="color: #0f37a6; font-weight:bold;">Dương Quá</span>
+                                  <span>hay lắm đó</span>
+                                  <div class="dropdown" style="float: right; padding-right: 20px;">
+                                      <a data-target="#" href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                      <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+                                          <a href="#" onclick="hideCmt(event)" >Ẩn</a><br>
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12" style="color: #9e9696;">
+                                  <h7>21 giờ</h7>
+                                </div>
+
+                              </div>
+
+                            </div>
+                          </div>
+                      </div>
+                      <div style="padding-left:20px;padding-top:10px;" class="row">
+                          <div class="row">
+                            <div class="col-md-1">
+                                <img src="../images/users/lms.jpg"  width="50" height="50" style="float:left;">
+                            </div>
+                            <div class="col-md-11">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="dropdown" style="float: right; padding-right: 20px;">
+                                      <a data-target="#" href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                      <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+                                          <a href="#" onclick="hideCmt(event)" >Ẩn</a><br>
+                                      </div>
+                                  </div>
+                                  <span style="color: #0f37a6; font-weight:bold;">Sầu Muội</span>
+                                  <span>Hay lắm đó sư muội.<br>Hỏi thế gian tình là gì <3</br></span>
+
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12" style="color: #9e9696;">
+                                  <h7>18 giờ</h7>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div style="padding-left:20px;padding-top:10px;" class="row">
+                          <div class="row">
+                            <div class="col-md-1">
+                                <img src="../images/users/klps.jpg"  width="50" height="50" style="float:left;">
+                            </div>
+                            <div class="col-md-11">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="dropdown" style="float: right; padding-right: 20px;">
+                                      <a data-target="#" href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                      <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+                                          <a href="#" onclick="hideCmt(event)" >Ẩn</a><br>
+                                      </div>
+                                  </div>
+                                  <span style="color: #0f37a6; font-weight:bold;">Tạ Kim Luân</span>
+                                  <span>DQ </span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12" style="color: #9e9696;">
+                                  <h7>18 giờ</h7>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div style="padding-left:20px;padding-top:10px;" class="row">
+                          <div class="row">
+                            <div class="col-md-1">
+                                <img src="../images/users/dd.jpg"  width="50" height="50" style="float:left;">
+                            </div>
+                            <div class="col-md-11">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="dropdown" style="float: right; padding-right: 20px;">
+                                      <a data-target="#" href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                      <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+                                          <a href="#" onclick="hideCmt(event)" >Ẩn</a><br>
+                                      </div>
+                                  </div>
+                                  <span style="color: #0f37a6; font-weight:bold;">Dự đẹp trai</span>
+                                  <span>I read it, but....</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12" style="color: #9e9696;">
+                                  <h7>10 giờ</h7>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div style="padding-left:20px;padding-top:10px;" class="row">
+                          <div class="row">
+                            <div class="col-md-1">
+                                <img src="../images/users/ht.jpg"  width="50" height="50" style="float:left;">
+                            </div>
+                            <div class="col-md-11">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="dropdown" style="float: right; padding-right: 20px;">
+                                      <a data-target="#" href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                      <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+                                          <a href="#" onclick="hideCmt(event)" >Ẩn</a><br>
+                                      </div>
+                                  </div>
+                                  <span style="color: #0f37a6; font-weight:bold;">Hư Trúc</span>
+                                  <span>Sách hay</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12" style="color: #9e9696;">
+                                  <h7>5 giờ</h7>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div style="padding-left:20px;padding-top:10px;" class="row">
+                          <div class="row">
+                            <div class="col-md-1">
+                                <img src="../images/users/dcb.jpg"  width="50" height="50" style="float:left;">
+                            </div>
+                            <div class="col-md-11">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <div class="dropdown" style="float: right; padding-right: 20px;">
+                                      <a data-target="#" href="#" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                      <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+                                          <a href="#" onclick="hideCmt(event)" >Ẩn</a><br>
+                                      </div>
+                                  </div>
+                                  <span style="color: #0f37a6; font-weight:bold;">Bình Doãn</span>
+                                  <span>Ahihi đỒ nGốK</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-12" style="color: #9e9696;">
+                                  <h7>Vừa xong</h7>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div >
+                      <div style="padding-left:20px;padding-top:10px;padding-right:20px;" class="row">
+                          <div class="row">
+                            <div class="col-md-1">
+                                <img src="../images/users/pbd.jpg"  width="50" height="50" style="float:left;">
+                            </div>
+                            <div class="col-md-11">
+                              <div class="form-group has-feedback">
+                                  <label class="control-label sr-only">DatePicker</label>
+                                  <textarea placeholder="Write a comment..." style="height: 70px !important" id="cmt01" name="comment" class="form-control" rows="3" onkeypress="comment(event)"></textarea>
+                                  <i class="fa fa-camera form-control-feedback" style="padding-top:80px;font-size: 1.5em;"></i>
+                                  <i class="fa  fa-smile-o form-control-feedback" style="padding-top:80px;padding-right:55px;font-size: 1.5em;"></i>
+                              </div>
+
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+
+
+
+          		    </div>
+                  <div class="tab-pane" id="features">
+                    <p class="tab-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis urna gravida mollis.This tab has icon in consectetur adipiscing eliconse consectetur adipiscing elit. Vestibulum nibh urna, ctetur adipiscing elit. Vestibulum nibh urna, t.consectetur adipiscing elit. Vestibulum nibh urna,  Vestibulum nibh urna,it.</p>
+          		  <p class="tab-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
+          									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          		</div>
+                  <div class="tab-pane" id="source">
+          		  <div class="response">
+          						<div class="media response-info">
+          							<div class="media-left response-text-left">
+          								<a href="#">
+          									<img class="media-object" src="../images/icon1.png" alt="" />
+          								</a>
+          								<h5><a href="#">Username</a></h5>
+          							</div>
+          							<div class="media-body response-text-right">
+          								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
+          									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          								<ul>
+          									<li>MARCH 21, 2015</li>
+          									<li><a href="single.html">Reply</a></li>
+          								</ul>
+          							</div>
+          							<div class="clearfix"> </div>
+          						</div>
+          						<div class="media response-info">
+          							<div class="media-left response-text-left">
+          								<a href="#">
+          									<img class="media-object" src="../images/icon1.png" alt="" />
+          								</a>
+          								<h5><a href="#">Username</a></h5>
+          							</div>
+          							<div class="media-body response-text-right">
+          								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
+          									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          								<ul>
+          									<li>MARCH 26, 2054</li>
+          									<li><a href="single.html">Reply</a></li>
+          								</ul>
+          							</div>
+          							<div class="clearfix"> </div>
+          						</div>
+          						<div class="media response-info">
+          							<div class="media-left response-text-left">
+          								<a href="#">
+          									<img class="media-object" src="../images/icon1.png" alt="" />
+          								</a>
+          								<h5><a href="#">Username</a></h5>
+          							</div>
+          							<div class="media-body response-text-right">
+          								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
+          									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          								<ul>
+          									<li>MAY 25, 2015</li>
+          									<li><a href="single.html">Reply</a></li>
+          								</ul>
+          							</div>
+          							<div class="clearfix"> </div>
+          						</div>
+          						<div class="media response-info">
+          							<div class="media-left response-text-left">
+          								<a href="#">
+          									<img class="media-object" src="../images/icon1.png" alt="" />
+          								</a>
+          								<h5><a href="#">Username</a></h5>
+          							</div>
+          							<div class="media-body response-text-right">
+          								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
+          									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          								<ul>
+          									<li>FEB 13, 2015</li>
+          									<li><a href="single.html">Reply</a></li>
+          								</ul>
+          							</div>
+          							<div class="clearfix"> </div>
+          						</div>
+          						<div class="media response-info">
+          							<div class="media-left response-text-left">
+          								<a href="#">
+          									<img class="media-object" src="../images/icon1.png" alt="" />
+          								</a>
+          								<h5><a href="#">Username</a></h5>
+          							</div>
+          							<div class="media-body response-text-right">
+          								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
+          									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          								<ul>
+          									<li>JAN 28, 2015</li>
+          									<li><a href="single.html">Reply</a></li>
+          								</ul>
+          							</div>
+          							<div class="clearfix"> </div>
+          						</div>
+          						<div class="media response-info">
+          							<div class="media-left response-text-left">
+          								<a href="#">
+          									<img class="media-object" src="../images/icon1.png" alt="" />
+          								</a>
+          								<h5><a href="#">Username</a></h5>
+          							</div>
+          							<div class="media-body response-text-right">
+          								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
+          									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          								<ul>
+          									<li>APR 18, 2015</li>
+          									<li><a href="single.html">Reply</a></li>
+          								</ul>
+          							</div>
+          							<div class="clearfix"> </div>
+          						</div>
+          						<div class="media response-info">
+          							<div class="media-left response-text-left">
+          								<a href="#">
+          									<img class="media-object" src="../images/icon1.png" alt="" />
+          								</a>
+          								<h5><a href="#">Username</a></h5>
+          							</div>
+          							<div class="media-body response-text-right">
+          								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,There are many variations of passages of Lorem Ipsum available,
+          									sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          								<ul>
+          									<li>DEC 25, 2014</li>
+          									<li><a href="single.html">Reply</a></li>
+          								</ul>
+          							</div>
+          							<div class="clearfix"> </div>
+          						</div>
+          					</div>
+                  </div>
+                </div>
+          	</div>
+        			</div>
+        			<div class="clearfix"></div>
+        			</div>
+              <!-- // store start -->
+              <div style="padding-left:20px;padding-top:10px; display:none" class="row" id="comment-store" >
+                  <div class="row">
+                    <div class="col-md-1">
+                        <img src="../images/users/pbd.jpg"  width="50" height="50" style="float:left;">
+                    </div>
+                    <div class="col-md-11">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <span class="nameOfUser" style="color: #0f37a6; font-weight:bold;">Em gái chelsea</span>
+                          <span class="content">Hay lắm đó, là bộ manga dành cho lứa tuổi thiếu niên của tác giả Eiichiro Oda, được đăng định kì trên tạp chí Weekly Shōnen Jump.</span>
+                          <div class="dropdown" style="float: right; padding-right: 20px;">
+                              <a data-target="#" href="page.html" data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                              <div class="dropdown-menu"style="right: 0;left: inherit;background-color: #cdd5d8;min-width: 60px;text-align:center;">
+
+                                  <a href="#" onclick="deleteCmt(event)" >Xóa</a><br>
+                                  <a href="#" onclick="editCmt(event)">Sửa</a>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12" style="color: #9e9696;">
+                          <h7>Vừa xong</h7>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <!-- // store end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-12" >
+        <div class="right_sidebar" style="background-color: #fff; border-radius: 10px !important; width: 370px !important">
+          <div class="single_widget">
+            <h2 style="border-top-left-radius: 10px !important; border-top-right-radius: 10px !important; width: 370px !important;">Sách đang đọc</h2>
+            <ul class="ppost_nav wow fadeInDown">
+              <li>
+                <div class="media"><a class="media-left" href="../pages/single_page2.html">
+                  <img src="../images/books/01.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="../pages/single_page2.html">Hôm nay tôi thất tình</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Hạ Vũ</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="../pages/single_page3.html">
+                  <img src="../images/books/02.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="../pages/single_page3.html">Đắc Nhân Tâm (Tái Bản 2016)</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Dale Carnegie </div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="../pages/single_page4.html">
+                  <img src="../images/books/03.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="../pages/single_page4.html">Nhà Giả Kim</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Paulo Coelho</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="../pages/single_page5.html">
+                  <img src="../images/books/08.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="../pages/single_page5.html">Tuổi Trẻ Đáng Giá Bao Nhiêu?</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Rosie Nguyễn </div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                  <div class="media-body" style="display: table-row; text-decoration: underline;float:right;">
+                        <a href="" >View all books</a>
+                  </div>
+              </li>
+            </ul>
+          </div>
+          <div class="single_widget" style="padding-top: 33px !important;">
+            <h2 style="border-top-left-radius: 10px !important; border-top-right-radius: 10px !important; width: 370px !important;">Sách muốn đọc</h2>
+            <ul class="ppost_nav wow fadeInDown">
+              <li>
+                <div class="media"><a class="media-left" href="../pages/single_page6.html">
+                  <img src="../images/books/10.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="../pages/single_page6.html">Chiếc áo tàng hình</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Hạ Vũ</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="../pages/single_page7.html">
+                  <img src="../images/books/11.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="../pages/single_page7.html">Xác ướp và kim tự tháp</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Dale Carnegie </div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="../pages/single_page8.html">
+                  <img src="../images/books/13.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="../pages/single_page8.html">Chờ Đến Mẫu Giáo Thì Đã Muộn</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Ibuka Masaru</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                <div class="media"><a class="media-left" href="../pages/single_page9.html">
+                  <img src="../images/books/14.jpg" alt="" width="70" height="90"></a>
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="../pages/single_page9">Moana</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">by Tâm Phạm</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                  <div class="media-body" style="display: table-row; text-decoration: underline;float:right;">
+                        <a href="" >View all books</a>
+                  </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-1 col-md-2 col-sm-4" >
+        <div class="left_sidebar" style="background-color: #fff;">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="../assets/js/wow.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/slick.min.js"></script>
+<script src="../assets/js/custom.js"></script>
+<script src="../assets/js/comment.js"></script>
+<!-- <script type="text/javascript" src="../assets/js/bootstrap-3.1.1.min.js"></script> -->
+<script type="text/javascript" src="../assets/js/star-rating.min.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.autocomplete.min.js"></script>
+<script type="text/javascript" src="../assets/js/currency-autocomplete.js"></script>
+<script type="text/javascript" src="../assets/js/eventtracking.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100088102-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
