@@ -33,4 +33,18 @@ $(function(){
     }
   });
 
+  $("#home_search_btn").click(function(){
+    if($("#autocomplete").val().search("Những kẻ săn máu") && $("#autocomplete").val() != "Những kẻ săn máu")
+    {
+      $(location).attr('href', 'pages/search.html')
+    }
+    else
+    {
+      if($("#autocomplete").val() === "Những kẻ săn máu")
+      {
+          $(location).attr('href', 'pages/single_page.html')
+      }
+    }
+  });
+
 });
