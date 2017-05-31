@@ -1501,7 +1501,9 @@ figure.effect-lily a:hover img {
 .products-page {
   padding: -5px 0;
 }
-
+.products-pagefix {
+  padding: 10px 0;
+}
 .new-product {
   float: right;
   background: rgba(245, 243, 243, 0.27);
@@ -1516,7 +1518,10 @@ figure.effect-lily a:hover img {
 .dress-name {
   margin: 0px 0;
 }
-
+.dress-namefix {
+  margin: 0px 0;
+  height: 80px;
+}
 .dress-name h2 {
   float: left;
   font-size: 27px;
@@ -1602,6 +1607,12 @@ p.right {
   float: left;
   padding: 8px 16px;
   text-decoration: none;
+}
+
+div.starsfix {
+  display: table-cell;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 /////////////////////
 div.stars {
