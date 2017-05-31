@@ -30,15 +30,15 @@
       <div class="row">
 
           <div class="col-md-1 navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
+            <button onclick="LogoClick()" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <a onclick="LogoClick()" class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
           </div>
           <div class="col-md-5">
             <ul class="nav navbar-nav custom_nav">
-              <li class="active"><a href="index.html">Trang chủ</a></li>
+              <li class="active"><a href="index.html" onclick="HomebuttonClick()">Trang chủ</a></li>
               <li><a href="pages/sachbanchay.html">Sách bán chạy</a></li>
               <li><a href="pages/viewcao.html">Lượt xem cao</a></li>
-              <li><a href="pages/giaithuong.html">Giải thưởng</a></li>
+              <li><a href="pages/giaituong.html">Giải thưởng</a></li>
             </ul>
           </div>
 
@@ -334,7 +334,7 @@
                       <div class="col-md-11">
                         <div class="form-group has-feedback">
                             <label class="control-label sr-only">DatePicker</label>
-                            <textarea id="cmt01" name="comment" class="form-control" rows="3" onkeypress="comment(event)" ></textarea>
+                            <textarea placeholder="Write a comment" id="cmt01" name="comment" class="form-control" rows="3" onkeypress="comment(event) CommentClicks()" ></textarea>
                             <i class="fa fa-camera form-control-feedback" style="padding-top:50px;font-size: 1.5em;"></i>
                             <i class="fa  fa-smile-o form-control-feedback" style="padding-top:50px;padding-right:50px;font-size: 1.5em;"></i>
                         </div>
@@ -467,7 +467,7 @@
                       <div class="col-md-11">
                         <div class="form-group has-feedback">
                             <label class="control-label sr-only">DatePicker</label>
-                            <textarea id="cmt02" name="comment" class="form-control" rows="3" style="resize: none;" onkeypress="comment(event)"></textarea>
+                            <textarea placeholder="Write a comment" id="cmt02" name="comment" class="form-control" rows="3" style="resize: none;" onkeypress="comment(event) CommentClicks()"></textarea>
                             <i class="fa fa-camera form-control-feedback" style="padding-top:50px;font-size: 1.5em;"></i>
                             <i class="fa  fa-smile-o form-control-feedback" style="padding-top:50px;padding-right:50px;font-size: 1.5em;"></i>
                         </div>
@@ -580,7 +580,7 @@
                       <div class="col-md-11">
                         <div class="form-group has-feedback">
                             <label class="control-label sr-only">DatePicker</label>
-                            <textarea id="cmt03" name="comment" class="form-control" rows="3" style="resize: none;" onkeypress="comment(event)"></textarea>
+                            <textarea placeholder="Write a comment" id="cmt03" name="comment" class="form-control" rows="3" style="resize: none;" onkeypress="comment(event) CommentClicks()"></textarea>
                             <i class="fa fa-camera form-control-feedback" style="padding-top:50px;font-size: 1.5em;"></i>
                             <i class="fa  fa-smile-o form-control-feedback" style="padding-top:50px;padding-right:50px;font-size: 1.5em;"></i>
                         </div>
@@ -641,7 +641,7 @@
               </li>
               <li>
                   <div class="media-body" style="display: table-row; text-decoration: underline;float:right;">
-                        <a href="" >View all books</a>
+                        <a href="pages/readingbooks.html" onclick="ViewallClick()">View all books</a>
                   </div>
               </li>
             </ul>
@@ -691,7 +691,7 @@
               </li>
               <li>
                   <div class="media-body" style="display: table-row; text-decoration: underline;float:right;">
-                        <a href="" >View all books</a>
+                        <a href="pages/wanttoread.html" onclick="ViewallClick()" >View all books</a>
                   </div>
               </li>
             </ul>
