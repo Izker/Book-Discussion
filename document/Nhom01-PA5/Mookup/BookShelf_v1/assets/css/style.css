@@ -1499,12 +1499,12 @@ figure.effect-lily a:hover img {
 }
 
 .products-page {
-  padding: -5px 0;
+  padding: 10px 0;
 }
 
 .new-product {
   float: right;
-  background: rgba(245, 243, 243, 0.27);
+  background: rgba(243, 245, 245, 245.27);
   min-height: 800px;
   padding: 2em;
 }
@@ -1515,6 +1515,7 @@ figure.effect-lily a:hover img {
 
 .dress-name {
   margin: 0px 0;
+  height: 80px;
 }
 
 .dress-name h2 {
@@ -1561,11 +1562,11 @@ p.right {
 .span1 {
   margin: 18px 0;
   padding: 15px 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  /*border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;*/
 }
 
-.span1 {
+.span2 {
   margin: 5px 0;
   padding: 5px 0;
   border-top: 1px solid #eee;
@@ -1603,10 +1604,12 @@ p.right {
   padding: 8px 16px;
   text-decoration: none;
 }
-/////////////////////
-div.stars {
-  width: 200px;
-  display: inline-block;
+
+div.stars {  
+  display: table-cell;
+  /*padding: 15px 0;  */
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 input.star { display: none; }
