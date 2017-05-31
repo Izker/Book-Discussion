@@ -25,14 +25,32 @@ function CommentClicks(event) {
   });
 }
 
-// function BClicks(event) {
-//   ga('send', {
-//     hitType: 'event',
-//     eventCategory: 'BookDetail',
-//     eventAction: 'Click',
-//     eventLabel: ''
-//   });
-// }
+function HomebuttonClick(event){
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Homebtn',
+    eventAction: 'Click',
+    eventLabel: 'Homebtn'
+  });
+}
+
+function LogoClick(event){
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'Logobtn',
+    eventAction: 'Click',
+    eventLabel: 'Logobtn'
+  });
+}
+
+function ViewallClick(event) {
+  ga('send', {
+    hitType: 'event',
+    eventCategory: 'ViewAll',
+    eventAction: 'Click',
+    eventLabel: 'ViewAll'
+  });
+}
 
 function SearchClick(event) {
   ga('send', {

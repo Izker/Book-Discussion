@@ -33,12 +33,12 @@
       <div class="row">
 
           <div class="col-md-1 navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt=""></a>
+            <button onclick="LogoClick()" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <a onclick="LogoClick()" class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt=""></a>
           </div>
           <div class="col-md-5">
             <ul class="nav navbar-nav custom_nav">
-              <li class="active"><a href="../index.html">Trang chủ</a></li>
+              <li class="active"><a href="../index.html" onclick="HomebuttonClick()">Trang chủ</a></li>
               <li><a href="sachbanchay.html">Sách bán chạy</a></li>
               <li><a href="viewcao.html">Lượt xem cao</a></li>
               <li><a href="giaituong.html">Giải thưởng</a></li>
@@ -49,7 +49,7 @@
             <div class="input-group" style="width: 300px;">
               <input type="text" class="form-control" name="currency" id="autocomplete" placeholder="Tìm sách, tác giả...">
               <span class="input-group-btn">
-                <button id="search_btn" class="btn btn-default" type="button" >Tìm</button>
+                <button onclick="SearchClick()" id="search_btn" class="btn btn-default" type="button" >Tìm</button>
               </span>
             </div>
           </div>
@@ -543,6 +543,7 @@
 								<li>
 									<div class="media"><a class="media-left" href="../pages/single_page5.html" onclick="BookDetailClick()">
                   <img src="../images/books/08.jpg" alt="" width="70" height="90"></a>
+<<<<<<< HEAD
 										<div class="media-body" style="display: table-row; font-weight:bold;">
 											<a class="catg_title" href="../pages/single_page5.html" onclick="BookDetailClick()">Tuổi Trẻ Đáng Giá Bao Nhiêu?</a>
 										</div>
@@ -562,6 +563,27 @@
 							<ul class="ppost_nav wow fadeInDown">
 								<li>
 									<div class="media"><a class="media-left" href="../pages/single_page6.html" onclick="BookDetailClick()">
+=======
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="../pages/single_page5.html" onclick="BookDetailClick()">Tuổi Trẻ Đáng Giá Bao Nhiêu?</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">tác giả: Rosie Nguyễn </div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                  <div class="media-body" style="display: table-row; text-decoration: underline;float:right;">
+                        <a href="../pages/readingbooks.html" onclick="ViewallClick()" >View all books</a>
+                  </div>
+              </li>
+            </ul>
+          </div>
+          <div class="single_widget" style="padding-top: 33px !important;">
+            <h2 style="border-top-left-radius: 10px !important; border-top-right-radius: 10px !important; width: 370px !important;">Sách muốn đọc</h2>
+            <ul class="ppost_nav wow fadeInDown">
+              <li>
+                <div class="media"><a class="media-left" href="../pages/single_page6.html" onclick="BookDetailClick()">
+>>>>>>> origin/master
                   <img src="../images/books/10.jpg" alt="" width="70" height="90"></a>
 										<div class="media-body" style="display: table-row; font-weight:bold;">
 											<a class="catg_title" href="../pages/single_page6.html" onclick="BookDetailClick()">Chiếc áo tàng hình</a>
@@ -593,6 +615,7 @@
 								<li>
 									<div class="media"><a class="media-left" href="../pages/single_page9.html" onclick="BookDetailClick()">
                   <img src="../images/books/14.jpg" alt="" width="70" height="90"></a>
+<<<<<<< HEAD
 										<div class="media-body" style="display: table-row; font-weight:bold;">
 											<a class="catg_title" href="../pages/single_page9.html" onclick="BookDetailClick()">Moana</a>
 										</div>
@@ -607,6 +630,22 @@
 								</li>
 							</ul>
 						</div>
+=======
+                  <div class="media-body" style="display: table-row; font-weight:bold;">
+                        <a class="catg_title" href="../pages/single_page9.html" onclick="BookDetailClick()">Moana</a>
+                  </div>
+                  <div class="media-body" style="display: table-row">tác giả: Tâm Phạm</div>
+                  <div class="media-body" style="display: table-row">&nbsp;</div>
+                </div>
+              </li>
+              <li>
+                  <div class="media-body" style="display: table-row; text-decoration: underline;float:right;">
+                        <a href="../pages/wanttoread.html" onclick="ViewallClick()" >View all books</a>
+                  </div>
+              </li>
+            </ul>
+          </div>
+>>>>>>> origin/master
 
 					</div>
 				</div>
